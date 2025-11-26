@@ -156,7 +156,10 @@
     {:else if version}
       <VersionMetadata {version} />
     {:else}
-      <p class="text-sm text-neutral-500">Version not found.</p>
+      <section class="space-y-4">
+        <h2 class="flex items-center text-lg font-medium">Metadata</h2>
+        <p class="text-sm text-neutral-500">Version not found.</p>
+      </section>
     {/if}
     <section class="space-y-4">
       <h2 class="flex items-center gap-2 text-lg font-medium">Builds</h2>
