@@ -322,12 +322,18 @@ export type UpdateVersionPayload = {
 
 export type Version = Node & {
   __typename?: 'Version';
+  build?: Maybe<Build>;
   builds?: Maybe<BuildConnection>;
   family: Family;
   id: Scalars['ID']['output'];
   java?: Maybe<Java>;
   key: Scalars['String']['output'];
   support: Support;
+};
+
+
+export type VersionBuildArgs = {
+  number: Scalars['Int']['input'];
 };
 
 
