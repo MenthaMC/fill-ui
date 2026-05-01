@@ -3,7 +3,7 @@ import { createClient, fetchExchange, getContextClient, type OperationResultStat
 import { graphql } from "$lib/gql";
 import { Context, watch } from "runed";
 
-const PROD_ENDPOINT = "https://fill.papermc.io";
+const PROD_ENDPOINT = "https://fill.menthamc.org";
 export const API_ENDPOINT = getApiEndpoint();
 
 function getApiEndpoint() {
